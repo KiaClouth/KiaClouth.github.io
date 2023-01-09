@@ -1,0 +1,133 @@
+<!---
+ *　　　　　　　　┏┓　　　┏┓+ +
+ *　　　　　　　┏┛┻━━━┛┻┓ + +
+ *　　　　　　　┃　　　　　　　┃ 　
+ *　　　　　　　┃　　　━　　　┃ ++ + + +
+ *　　　　　 　 ████━████+
+ *　　　　　　　┃　　　　　　　┃ +
+ *　　　　　　　┃　　　┻　　　┃
+ *　　　　　　　┃　　　　　　　┃ + +
+ *　　　　　　　┗━┓　　　┏━┛
+ *　　　　　　　　　┃　　　┃　　　　　　　　　　　
+ *　　　　　　　　　┃　　　┃ + + + +
+ *　　　　　　　　　┃　　　┃　　　　　　　
+ *　　　　　　　　　┃　　　┃ + 　　　　神兽镇楼 , 无BUG , 无异常
+ *　　　　　　　　　┃　　　┃
+ *　　　　　　　　　┃　　　┃　　+　　　　　　　　　
+ *　　　　　　　　　┃　 　　┗━━━┓ + +
+ *　　　　　　　　　┃ 　　　　　　　┣┓
+ *　　　　　　　　　┃ 　　　　　　　┏┛
+ *　　　　　　　　　┗┓┓┏━┳┓┏┛ + + + +
+ *　　　　　　　　　　┃┫┫　┃┫┫
+ *　　　　　　　　　　┗┻┛　┗┻┛+ + + +
+--->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>KiyaのToys</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="css/monsterPage.css" />
+  </head>
+  <body class="light" id="body">
+    <div id="app">
+      <div id="warp" class="search">
+        <!-- 耳朵·START -->
+        <svg class="ears-r" onclick="min()" width="84px" height="92px">
+          <path
+            fill-rule="evenodd"
+            stroke-width="4px"
+            stroke="rgb(51, 42, 124)"
+            fill="rgb(243, 156, 18)"
+            d="M65.000,24.000 C30.843,-10.814 -0.251,21.796 10.000,33.000 C20.251,44.204 53.000,50.544 53.000,76.000 C53.000,101.456 94.771,54.344 65.000,24.000 Z"
+          />
+        </svg>
+        <svg class="ears-l" width="84px" height="92px">
+          <path
+            fill-rule="evenodd"
+            stroke-width="4px"
+            stroke="rgb(51, 42, 124)"
+            fill="rgb(242, 87, 103)"
+            d="M65.000,24.000 C30.843,-10.814 -0.251,21.796 10.000,33.000 C20.251,44.204 53.000,50.544 53.000,76.000 C53.000,101.456 94.771,54.344 65.000,24.000 Z"
+          />
+        </svg>
+        <!-- 耳朵·END -->
+
+        <!-- 尾巴·START -->
+        <svg class="tail" width="61px" height="108.5px">
+          <path
+            fill-rule="evenodd"
+            fill="rgb(51, 42, 124)"
+            d="M30.500,0.427 C31.605,0.427 32.500,1.322 32.500,2.427 L32.500,55.781 C32.500,56.886 31.605,57.781 30.500,57.781 C29.395,57.781 28.500,56.886 28.500,55.781 L28.500,2.427 C28.500,1.322 29.395,0.427 30.500,0.427 Z"
+          />
+          <path
+            fill-rule="evenodd"
+            stroke-width="3px"
+            stroke="rgb(51, 42, 124)"
+            fill="rgb(24, 205, 240)"
+            d="M30.500,54.000 C43.755,54.000 54.500,64.745 54.500,78.000 C54.500,91.255 43.755,102.000 30.500,102.000 C17.245,102.000 6.500,91.255 6.500,78.000 C6.500,64.745 17.245,54.000 30.500,54.000 Z"
+          />
+        </svg>
+        <!-- 尾巴·END -->
+
+        <!-- 输入框·START -->
+        <input
+          type="text"
+          name="searchContent"
+          id="input"
+          value=""
+          onkeydown="post(event)"
+          autofocus="autofocus"
+        />
+        <!-- 输入框·END -->
+
+        <!-- 登录页·START -->
+        <div id="page1" class="page loadingPage">
+          <img src="img/rouai.png" id="rouai" />
+          <div id="menu">
+            <div id="to_monster_page_btn" class="menu_btn" onclick="to(2)">
+              文本资料
+            </div>
+            <div id="to_data_page_btn" class="menu_btn" onclick="to(3)">
+              数据文本
+            </div>
+            <div id="to_skill_page_btn" class="menu_btn" onclick="to(4)">
+              文本资料
+            </div>
+          </div>
+        </div>
+        <!-- 登录页·END -->
+
+        <div id="page2" class="page monsterPage">
+          <div id="monsterInfoTable_father" class="active father">
+            <div class="title">搜索结果列表</div>
+            <div id="monsterInfoTable"></div>
+          </div>
+          <div id="monsterInfoDet_father" class="father">
+            <div class="title">详细资料</div>
+            <div id="monsterInfoDet"></div>
+          </div>
+          <div id="monsterInfoAdd_father" class="father">
+            <div class="title">新增数据</div>
+            <div id="monsterInfoAdd"></div>
+          </div>
+          <div id="backBtn" onclick="backPage()">返回</div>
+          <div id="monsterPageSwitch" class="add" onclick="addSave()">新增</div>
+        </div>
+
+        <div id="page3" class="page mathPage">施工中...</div>
+        <div id="page4" class="page skillPage">施工中...</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+  <script
+    src="js/monsterPage.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+</html>

@@ -1,0 +1,129 @@
+#warp .loadingPage{
+	width: 30rem;
+	height: 30rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: .25rem;
+	/* -webkit-app-region: drag; */
+	box-shadow: .25rem .25rem 2rem rgba(51,42,124,.3);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 101;
+}
+
+#warp .loadingPage.active{
+	opacity: 1;
+	visibility: initial;
+	display: block;
+}
+
+#warp .loadingPage.hidden{
+	width: 18rem;
+	height: 48rem;
+	border-radius: unset;
+	background-color: #332a7c;
+	display: block;
+	opacity: 1;
+	visibility: initial;
+	left: calc( 50% - 40rem );
+	border-radius: 2rem;
+	transition-delay: .2s;
+}
+
+#warp .loadingPage.hidden.det{
+	background-color: #595d7f;
+}
+
+#warp .loadingPage.hidden.add{
+	background-color: #242140;
+}
+
+#warp .loadingPage #rouai{
+	height: 48rem;
+	position: absolute;
+	top: -10rem;
+	left: 0;
+	transform: translateX(-70%);
+	/* -webkit-app-region: drag; */
+	z-index: 2;
+	transition: all .2s;
+	opacity: 0;
+}
+
+#warp .loadingPage.hidden #rouai{
+	opacity: 0;
+}
+
+#warp .loadingPage #menu{
+	width: 20rem;
+	height: 24rem;
+	position: absolute;
+	top: 3rem;
+	right: 2rem;
+	/* background-color: #00B5FF; */
+	z-index: 4;
+}
+
+#warp .loadingPage.hidden #menu{
+	width: 20rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#warp .loadingPage #menu .menu_btn{
+	position: absolute;
+	height: 3rem;
+	width: 100%;
+	top: 0rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(255,255,255,.95);
+	font-size: 2rem;
+	line-height: 3rem;
+	text-align: left;
+	text-indent: 3rem;
+	/* -webkit-app-region: no-drag; */
+	border-bottom: .25rem solid rgba(255,255,255,.0);
+	cursor: pointer;
+}
+
+#warp .loadingPage.hidden #menu .menu_btn{
+	/* transition-delay: .2s; */
+	/* color: rgba(55,55,55,.95); */
+	text-indent: 1rem;
+	width: 70%;
+}
+
+#warp .loadingPage #menu .menu_btn:nth-child(1){
+	transform: translate(-50%,14rem);
+}
+
+#warp .loadingPage #menu .menu_btn:nth-child(2){
+	transform: translate(-50%,18rem);
+}
+
+#warp .loadingPage #menu .menu_btn:nth-child(3){
+	transform: translate(-50%,22rem);
+}
+
+#warp .loadingPage #menu .menu_btn:hover{
+	width: 60%;
+	border-bottom: .25rem solid #f39c12;
+}
+
+#warp .loadingPage #menu .menu_btn.active{
+	width: 60%;
+}
+#warp .loadingPage #menu .menu_btn.active::after{
+	content: "";
+	display: block;
+	width: .75rem;
+	height: .75rem;
+	border-radius: .375rem;
+	position: absolute;
+	top: calc( 50% - .375rem );
+	left: -.5rem;
+	background-color: #00B5FF;
+}
