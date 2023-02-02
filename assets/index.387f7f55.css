@@ -1,0 +1,1069 @@
+/* 样式 */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/* 规范化样式 */
+/* 外部字体引入 */
+@font-face {
+  font-family: 'DINpro';
+  src: url('../font/DINpro-black.woff2') format('woff2'), url('../font/DINpro-black.woff') format('woff');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'DINpro';
+  src: url(./DINpro-bold.3cbe5e1f.woff2) format('woff2'), url(./DINpro-bold.8e79bb20.woff) format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'DINpro';
+  src: url('./DINpro-medium.95ff470c.woff2') format('woff2'), url('./DINpro-medium.d1327a02.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DINpro';
+  src: url('./DINpro-regular.9d493d47.woff2') format('woff2'), url('./DINpro-regular.e77cc4f6.woff') format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'DINpro';
+  src: url('./DINpro-light.212bc038.woff2') format('woff2'), url('./DINpro-light.2566bf54.woff') format('woff');
+  font-weight: 100;
+}
+/* 引入外部字体 */
+/* 基础属性定义 */
+:root {
+  /* 字体家族定义 */
+  --font_family: DINpro, Helvetica Neue, Helvetica, Ubuntu, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Source Han Sans CN,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+  /* 基础字号定义 */
+  --base-font-size: 12px;
+
+  /* 版心宽度定义 */
+  --typeArea: 1420px;
+
+  /* 圆角定义 */
+  --border-radius-large: 20px;
+  --border-radius-normal: 8px;
+  --border-radius-small: 4px;
+
+  /* 描边定义 */
+  --border-thick: 3px;
+  --border-normal: 2px;
+  --border-thin: 1px;
+
+  /* 时间定义 */
+  --time-short: 100ms;
+  --time-normal: 200ms;
+  --time-long: 300ms;
+}
+/* .light基础色定义 */
+body.light {
+  /* 颜色定义 */
+
+  /* 文本颜色 */
+  --title-color-1: #383646;
+  --title-color-2: #4d4b5b;
+  --main-text-color: #565667;
+  --secondary-text-color: #818195;
+  --white-100: rgba(255, 255, 255, 1);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --disable: #b0b0c8;
+  --placeholder: #ccd6de;
+
+  /* 背景色 */
+  --main-color-4: #151327;
+  --main-color-2: #332f45;
+  --negative-3-bg: #rgba(160, 168, 174, 0.3);
+  --negative-2-bg: rgba(160, 168, 174, 0.2);
+  --negative-1-bg: rgba(160, 168, 174, 0.1);
+  --table-content-color: #f5f8f9;
+  --main-color-1: #fbfdff;
+  --bg-white-100: #ffffff;
+  --bg-white-30: rgba(255, 255, 255, 0.3);
+  --bg-white-10: rgba(255, 255, 255, 0.1);
+  --bg-main-color-6: #f0e1de;
+  --bg-main-color-5: #b6ebee;
+  --bg-ooki: #ecf0f3;
+  --bg-info: #dcf6fa;
+  --bg-successful: #ddf7e3;
+  --bg-warring: #fdebe0;
+  --bg-dargerous: #fee0e3;
+  --bg-linear-negative: linear-gradient(245deg, var(--bg-white-100) 0%, var(--bg-ooki) 100%);
+  --bg-linear-positive: linear-gradient(115deg, var(--bg-white-100) 0%, var(--bg-ooki) 100%);
+
+  /* 高亮色 */
+  --main-color-3-dodging-1: #ff5500;
+  --main-color-3: #ff681d;
+  --main-color-3-10: rgba(255, 104, 29, 0.1);
+  --main-color-3-30: rgba(255, 104, 29, 0.3);
+  --main-color-3-burning-1: #ff7936;
+  --main-color-3-burning-2: #ff8a4f;
+  --info: #11c5db;
+  --successful: #1bc943;
+  --warring: #f4772e;
+  --dangerous: #ff5670;
+
+  /* 装饰色 */
+  --deepblue: #3c44b1;
+  --skyblue: #4191ff;
+  --young: #11c5db;
+  --green: #1bc943;
+  --yellow: #f4772e;
+  --red: #f83245;
+  --grey: #7a7b97;
+
+  /* 阴影色 */
+  --big-shadow-color: rgba(56, 71, 101, 0.08);
+  --small-shadow-color: rgba(0, 17, 43, 0.08);
+}
+/* .light复合属性定义 */
+body.light {
+  /* 效果定义 */
+  --shadow-nav-2: 0px 4px 8px var(--small-shadow-color);
+  --shadow-big: 0px 20px 50px 0px var(--big-shadow-color);
+  --shadow-small: 0px 8px 16px 0px var(--small-shadow-color);
+  --inputbox-hover-effect: 0px 0px 0px 3px var(--main-color-3-10),
+    0px 0px 0px 1px var(--main-color-3);
+  --inputbox-dangreous-effect: 0px 0px 0px 3px var(--bg-dargerous), 0px 0px 0px 1px var(--dangerous);
+  --main-button-shadow: 0px 4px 8px 0px var(--main-color-3-30);
+  --tab-active-underline: 0px 4px 0px 0px var(--main-color-3);
+}
+/* .grey基础色定义 */
+body.grey {
+  /* 颜色定义 */
+
+  /* 文本颜色 */
+  --title-color-1: #383646;
+  --title-color-2: #4d4b5b;
+  --main-text-color: #565667;
+  --secondary-text-color: #818195;
+  --white-100: rgba(255, 255, 255, 1);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --disable: #b0b0c8;
+  --placeholder: #ccd6de;
+
+  /* 背景色 */
+  --main-color-4: #151327;
+  --main-color-2: #332f45;
+  --negative-3-bg: #rgba(160, 168, 174, 0.3);
+  --negative-2-bg: rgba(160, 168, 174, 0.2);
+  --negative-1-bg: rgba(160, 168, 174, 0.1);
+  --table-content-color: #f5f8f9;
+  --main-color-1: #fbfdff;
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --main-color-6: #f0e1de;
+  --main-color-5: #b6ebee;
+  --bg-info: #dcf6fa;
+  --bg-successful: #ddf7e3;
+  --bg-warring: #fdebe0;
+  --bg-dargerous: #fee0e3;
+  --bg-studio: #ff902e;
+
+  /* 高亮色 */
+  --main-color-3-dodging-1: #ff5500;
+  --main-color-3: #ff681d;
+  --main-color-3-10: rgba(255, 104, 29, 0.1);
+  --main-color-3-30: rgba(255, 104, 29, 0.3);
+  --main-color-3-burning-1: #ff7936;
+  --main-color-3-burning-2: #ff8a4f;
+  --info: #11c5db;
+  --successful: #1bc943;
+  --warring: #f4772e;
+  --dangerous: #ff5670;
+
+  /* 装饰色 */
+  --deepblue: #3c44b1;
+  --skyblue: #4191ff;
+  --young: #11c5db;
+  --green: #1bc943;
+  --yellow: #f4772e;
+  --red: #f83245;
+  --grey: #7a7b97;
+
+  /* 阴影色 */
+  --big-shadow-color: rgba(56, 71, 101, 0.08);
+  --small-shadow-color: rgba(0, 17, 43, 0.08);
+}
+/* .grey复合属性定义 */
+body.grey {
+  /* 效果定义 */
+  --shadow-nav-2: 0px 4px 8px var(--small-shadow-color);
+  --shadow1: 0px 20px 50px 0px var(--big-shadow-color);
+  --shadow0: 0px 8px 16px 0px var(--small-shadow-color);
+  --inputbox-hover-effect: 0px 0px 0px 3px var(--main-color-3-10),
+    0px 0px 0px 1px var(--main-color-3);
+  --inputbox-dangreous-effect: 0px 0px 0px 3px var(--bg-dargerous), 0px 0px 0px 1px var(--dangerous);
+  --main-button-shadow: 0px 4px 8px 0px var(--main-color-3-30);
+  --tab-active-underline: 0px 4px 0px 0px var(--main-color-3);
+}
+/* .black基础色定义 */
+body.black {
+  /* 颜色定义 */
+
+  /* 文本颜色 */
+  --title-color-1: #383646;
+  --title-color-2: #4d4b5b;
+  --main-text-color: #565667;
+  --secondary-text-color: #818195;
+  --white-100: rgba(255, 255, 255, 1);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --disable: #b0b0c8;
+  --placeholder: #ccd6de;
+
+  /* 背景色 */
+  --main-color-4: #151327;
+  --main-color-2: #332f45;
+  --negative-3-bg: #rgba(160, 168, 174, 0.3);
+  --negative-2-bg: rgba(160, 168, 174, 0.2);
+  --negative-1-bg: rgba(160, 168, 174, 0.1);
+  --table-content-color: #f5f8f9;
+  --main-color-1: #fbfdff;
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --main-color-6: #f0e1de;
+  --main-color-5: #b6ebee;
+  --bg-info: #dcf6fa;
+  --bg-successful: #ddf7e3;
+  --bg-warring: #fdebe0;
+  --bg-dargerous: #fee0e3;
+  --bg-studio: #ff902e;
+
+  /* 高亮色 */
+  --main-color-3-dodging-1: #ff5500;
+  --main-color-3: #ff681d;
+  --main-color-3-10: rgba(255, 104, 29, 0.1);
+  --main-color-3-30: rgba(255, 104, 29, 0.3);
+  --main-color-3-burning-1: #ff7936;
+  --main-color-3-burning-2: #ff8a4f;
+  --info: #11c5db;
+  --successful: #1bc943;
+  --warring: #f4772e;
+  --dangerous: #ff5670;
+
+  /* 装饰色 */
+  --deepblue: #3c44b1;
+  --skyblue: #4191ff;
+  --young: #11c5db;
+  --green: #1bc943;
+  --yellow: #f4772e;
+  --red: #f83245;
+  --grey: #7a7b97;
+
+  /* 阴影色 */
+  --big-shadow-color: rgba(56, 71, 101, 0.08);
+  --small-shadow-color: rgba(0, 17, 43, 0.08);
+}
+/* .black复合属性定义 */
+body.black {
+  /* 效果定义 */
+  --shadow-nav-2: 0px 4px 8px var(--small-shadow-color);
+  --shadow1: 0px 20px 50px 0px var(--big-shadow-color);
+  --shadow0: 0px 8px 16px 0px var(--small-shadow-color);
+  --inputbox-hover-effect: 0px 0px 0px 3px var(--main-color-3-10),
+    0px 0px 0px 1px var(--main-color-3);
+  --inputbox-dangreous-effect: 0px 0px 0px 3px var(--bg-dargerous), 0px 0px 0px 1px var(--dangerous);
+  --main-button-shadow: 0px 4px 8px 0px var(--main-color-3-30);
+  --tab-active-underline: 0px 4px 0px 0px var(--main-color-3);
+}
+.convex {
+  --offset: 5px;
+  background: var(--bg-linear-positive) no-repeat;
+  background-blend-mode: multiply;
+  position: relative;
+}
+.concave {
+  --offset: 5px;
+  background: var(--bg-linear-negative) no-repeat;
+  background-blend-mode: multiply;
+  position: relative;
+}
+/* :is(.convex, .concave)::before {
+  mix-blend-mode: overlay;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom, #ffffff 0%, #ffffff 52%,#000000 52%,#000000 100%);
+  border-radius: inherit;
+  top: calc( 0px - var(--offset));
+  left: calc( 0px - var(--offset));
+  filter: blur(calc( var(--offset) * 3 ));
+}
+
+:is(.convex, .concave)::after {
+  mix-blend-mode: multiply;
+  content: '';
+  z-index: -2;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom, #ffffff 0%, #ffffff 48%,var(--bg-ooki) 50%,var(--bg-ooki) 100%);
+  border-radius: inherit;
+  top: calc( var(--offset));
+  left: calc( var(--offset));
+  filter: blur(calc( var(--offset) * 3));
+} */
+:is(.convex, .concave)::before {
+  mix-blend-mode: overlay;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: inherit;
+  box-shadow: calc( 0px - var(--offset)) calc( 0px - var(--offset)) calc(2 * var(--offset)) 0 var(--white-100);
+}
+:is(.convex, .concave)::after {
+  mix-blend-mode: multiply;
+  content: '';
+  z-index: -2;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: inherit;
+  box-shadow: var(--offset) var(--offset) calc(2 * var(--offset)) 0 #D1D9E6;
+}
+/* 原子样式库 */
+/* 布局规则 */
+/* 右侧滚动条样式 */
+::-webkit-scrollbar {
+  height: 0;
+  width: 8px;
+  color: transparent;
+}
+/* 正常情况下滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color-2);
+  border-radius: var(--border-radius-small);
+}
+/* 鼠标悬浮在滑块上时滑块的样式 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color-3);
+}
+html {
+  font: 400 var(--base-font-size) / 1.5 var(--font_family);
+  background-color: transparent;
+}
+/* 初始化 */
+a,
+body,
+canvas,
+code,
+div,
+footer,
+form,
+header,
+html,
+i,
+iframe,
+img,
+label,
+li,
+main,
+mark,
+menu,
+nav,
+ol,
+output,
+p,
+pre,
+section,
+small,
+span,
+strong,
+sub,
+ul,
+var {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+canvas {
+  touch-action: none;
+}
+canvas:focus-visible {
+  outline: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* filter: drop-shadow(0 0 8px rgba(142,211,83,1)); */
+  /* background: rgba(0,0,0,0.2); */
+}
+/* button组件 */
+button {
+  font: normal 14px/22px var(--font_family);
+  padding: 10px 20px;
+  border-radius: var(--border-radius-normal);
+  border: none;
+  cursor: pointer;
+}
+/* title组件：
+梯度: +3px +2px +0px +2px +4px +4px +4px +8px +12px +16px
+行高 = 字号 + 8px */
+:is(title, h1, h2, h3, h4, h5, h6, h7, h8, h9){
+  color: var(--title-color-2);
+}
+title {
+  display: block;
+}
+/* H1 */
+h1{
+  font: bold calc(1rem + 2px + 4px * 3 + 8px + 12px + 16px) / calc(1em + 8px) var(--font_family);
+}
+/* H2 */
+h2,
+.content title {
+  font: bold calc(1rem + 2px + 4px * 3 + 8px + 12px) / calc(1em + 8px) var(--font_family);
+}
+/* H3 */
+h3,
+.content .content title {
+  font: bold calc(1rem + 2px + 4px * 3 + 8px) / calc(1em + 8px) var(--font_family);
+}
+/* H4 */
+h4,
+.content .content .content title {
+  font: bold calc(1rem + 2px + 4px * 3) / calc(1em + 8px) var(--font_family);
+}
+/* H5 */
+h5,
+.content .content .content .content title {
+  font: bold calc(1rem + 2px + 4px * 2) / calc(1em + 8px) var(--font_family);
+}
+/* H6 */
+h6,
+.content .content .content .content .content title {
+  font: bold calc(1rem + 2px + 4px) / calc(1em + 8px) var(--font_family);
+}
+/* H7 */
+h7,
+.content .content .content .content .content .content title {
+  font: bold calc(1rem + 2px) / calc(1em + 8px) var(--font_family);
+}
+/* H8 */
+h8,
+.content .content .content .content .content .content .content title {
+  font: bold 1rem / calc(1em + 8px) var(--font_family);
+}
+/* H9 */
+h9,
+.content .content .content .content .content .content .content .content title {
+  font: bold calc(1rem - 2px) / calc(1em + 8px) var(--font_family);
+}
+/* 非粗体title */
+:is(title, h1, h2, h3, h4, h5, h6, h7, h8, h9).normal {
+  font-weight: normal;
+  color: var(--title-color-1);
+}
+p {
+  color: var(--main-text-color);
+  font: normal 14px/20px var(--font_family);
+}
+#root {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  /* background-color: var(--white-100); */
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
+  --smooth-corners: 128;
+}
+#root.fullScreen {
+  width: 100%;
+  height: 100%;
+  mask-image: unset;
+  -webkit-mask-image: unset;
+}
+/* 特殊样式 */
+#loadingPage {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(245, 209, 90);
+}
+#loadingBox {
+  --overallWidth: 20vw;
+  --overallHeight: 20vw;
+  position: fixed;
+  left: 40vw;
+  top: calc(50vh - 10vw);
+  width: var(--overallWidth);
+  height: var(--overallHeight);
+  mask-image: url(./Union.d6b1fcee.svg);
+  -webkit-mask-image: url(./Union.d6b1fcee.svg);
+  mask-position: 0 0;
+  -webkit-mask-position: 0 0;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+#maskElement2,
+#maskElement3 {
+  position: absolute;
+  width: calc(0.24 * var(--overallWidth));
+  height: calc(0.14 * var(--overallHeight));
+  clip-path: ellipse(50% 50% at 50% 50%);
+  background-color: rgb(83, 56, 195);
+  z-index: 2;
+}
+#maskElement2 {
+  top: 62%;
+  left: 16%;
+}
+#maskElement3 {
+  position: absolute;
+  top: 36%;
+  left: 59%;
+}
+#loadingBox .line,
+#loadingBox .shadow {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+#loadingBox .line {
+  --startingDistance: 65%;
+  z-index: 3;
+}
+#loadingBox .shadow {
+  --startingDistance: 80%;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+@keyframes moveLine {
+  0% {
+    offset-distance: var(--startingDistance);
+    opacity: 1;
+  }
+  100% {
+    offset-distance: calc(var(--startingDistance) + 100%);
+    opacity: 1;
+  }
+}
+@keyframes moveShadow {
+  0% {
+    offset-distance: var(--startingDistance);
+    opacity: 1;
+  }
+  100% {
+    offset-distance: calc(var(--startingDistance) + 100%);
+    opacity: 1;
+  }
+}
+#loadingBox .line .circle,
+#loadingBox .shadow .circle {
+  --animationTime: 1600ms;
+  --startTime: 750ms;
+  --intervalTime: 20ms;
+  transition: all 0.3s;
+  position: absolute;
+  width: calc(0.16 * var(--overallWidth));
+  height: calc(0.16 * var(--overallHeight));
+  /* width: calc(0.24 * var(--overallWidth));
+  height: calc(0.14 * var(--overallHeight));
+  clip-path: ellipse(50% 50% at 50% 50%); */
+  offset-rotate: 0deg;
+  border-radius: 50%;
+  opacity: 0;
+}
+#loadingBox .line .circle {
+  margin: 22% 0 0 22%;
+  background-color: rgb(255, 73, 32);
+  offset-path: path(
+    'M135.855 8.78699C173.378 32.583 181.249 104.655 153.436 169.762C125.624 234.869 72.659 268.358 35.136 244.562C-2.38598 220.765 -10.258 148.694 17.555 83.586C45.368 18.479 98.333 -15.01 135.855 8.78699Z'
+  );
+  animation: moveLine var(--animationTime) infinite linear;
+}
+#loadingBox .shadow .circle {
+  /* display: none; */
+  margin: 34% 0 0 5%;
+  background-color: rgb(240, 168, 0);
+  offset-path: path(
+    'M31.603 22.489C80.11 -5.38799 168.044 -6.50599 228.01 19.992C287.975 46.49 297.264 90.57 248.758 118.447C200.251 146.325 112.316 147.443 52.351 120.945C-7.61499 94.446 -16.904 50.367 31.603 22.489Z'
+  );
+  animation: moveShadow var(--animationTime) infinite cubic-bezier(0.47, 0, 0.37, 1);
+}
+#loadingBox .line .circle:nth-child(-n + 8) {
+  background-color: rgb(255, 237, 216);
+}
+#loadingBox .line .circle:nth-child(1),
+#loadingBox .shadow .circle:nth-child(1) {
+  animation-delay: calc(var(--startTime) + 0 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(2),
+#loadingBox .shadow .circle:nth-child(2) {
+  animation-delay: calc(var(--startTime) + 1 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(3),
+#loadingBox .shadow .circle:nth-child(3) {
+  animation-delay: calc(var(--startTime) + 2 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(4),
+#loadingBox .shadow .circle:nth-child(4) {
+  animation-delay: calc(var(--startTime) + 3 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(5),
+#loadingBox .shadow .circle:nth-child(5) {
+  animation-delay: calc(var(--startTime) + 4 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(6),
+#loadingBox .shadow .circle:nth-child(6) {
+  animation-delay: calc(var(--startTime) + 5 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(7),
+#loadingBox .shadow .circle:nth-child(7) {
+  animation-delay: calc(var(--startTime) + 6 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(8),
+#loadingBox .shadow .circle:nth-child(8) {
+  animation-delay: calc(var(--startTime) + 7 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(9),
+#loadingBox .shadow .circle:nth-child(9) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 0 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(10),
+#loadingBox .shadow .circle:nth-child(10) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 1 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(11),
+#loadingBox .shadow .circle:nth-child(11) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 2 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(12),
+#loadingBox .shadow .circle:nth-child(12) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 3 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(13),
+#loadingBox .shadow .circle:nth-child(13) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 4 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(14),
+#loadingBox .shadow .circle:nth-child(14) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 5 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(15),
+#loadingBox .shadow .circle:nth-child(15) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 6 * var(--intervalTime));
+}
+#loadingBox .line .circle:nth-child(16),
+#loadingBox .shadow .circle:nth-child(16) {
+  animation-delay: calc(var(--startTime) + var(--animationTime) / 2 + 7 * var(--intervalTime));
+}
+#GS {
+  width: 100%;
+  height: 100%;
+  /* background: url(../img/page/bg/bg.svg) no-repeat center; */
+  background-color: rgba(142, 211, 83, 1);
+  background-color: var(--bg-okki);
+  display: flex;
+}
+#GS > div:nth-child(1) {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+#BannerBox .top_nav {
+  width: 100%;
+  height: fit-content;
+}
+#BannerBox .top_nav img {
+  display: block;
+  opacity: 1;
+}
+#BannerBox .banner_area {
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 640px;
+  background: url(./border.d2cb61cf.svg) 0% 0% / contain no-repeat;
+}
+#embed-host,
+#scene-explorer-host,
+#inspector-host {
+  position: absolute !important;
+}
+#BannerBox .contrast {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+/* #BannerBox #BannerCanvas {
+  mask-image: url(../img/banner/mask.svg);
+  -webkit-mask-image: url(../img/banner/mask.svg);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  position: relative;
+  mask-position: 0px 0.644vw;
+  -webkit-mask-position: 0px 0.644vw;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+} */
+#BannerBox .loading_progress {
+  position: absolute;
+  right: 2vw;
+  top: calc(100px + 2vw);
+  font: normal 12px/18px var(--font_family);
+  color: var(--white-30);
+}
+#BannerBox .pfs-info {
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
+  font: normal 12px/18px var(--font_family);
+  color: var(--white-30);
+}
+#version_info {
+  position: absolute;
+  left: 2vw;
+  top: 2vw;
+  font: normal 12px/18px var(--font_family);
+  color: var(--white-30);
+}
+#Menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: rgba(142, 211, 83, 1);
+  padding: 0.5rem 4rem;
+  background-color: var(--white-100);
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
+  --smooth-corners: 12;
+  cursor: pointer;
+  transition: all var(--time-normal);
+}
+#Tolam{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(142, 211, 83, 1);
+}
+#WoniuSec {
+  width: 100%;
+}
+.bg{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-linear-positive) no-repeat 100%,100%;
+  background-color: red;
+  z-index: -999;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topNav {
+  width: 100%;
+  z-index: 999;
+}
+.banner {
+  width: 100%;
+  height: 650px;
+  /* background-color: var(--bg-info); */
+}
+#WoniuSecBannerCanvas{
+  pointer-events: all;
+}
+.convenientEntrance {
+  width: var(--typeArea);
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 100px;
+}
+.convenientEntrance>div:nth-child(1){
+  color: var(--title-color-1);
+  font: normal 32px/40px var(--font_family) ;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.convenientEntrance .buttonList{
+  display: flex;
+  justify-content: space-between;
+}
+.convenientEntrance button {
+  font: bold 36px/44px var(--font_family);
+  color: var(--placeholder);
+  width: calc((100% - 80px) / 3);
+  height: 298px;
+  background-color: white;
+}
+.module {
+  padding: 100px 0px;
+  width: var(--typeArea);
+  display: flex;
+  align-items: center;
+}
+.module .left{
+  flex: 0 0 auto;
+  width: calc( 38.2% - 40px );
+  height: fit-content;
+  margin-right: 40px;
+}
+.module .right{
+  width: 100%;
+  height: 400px;
+  background-color: var(--negative-1-bg);
+}
